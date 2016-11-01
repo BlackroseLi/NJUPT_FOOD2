@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView2"
+        android:src="@drawable/fruit"/>
+    <TextView
+        android:id="@+id/details_tv1"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="菜名"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <RatingBar
+        android:id="@+id/details_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/details_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_rb"
+
+        android:text="评论"
+        />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_tv2">
+
+    </ListView>
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageButton
+        android:id="@+id/ibtn"
+        android:scaleType="centerInside"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
